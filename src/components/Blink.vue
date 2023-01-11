@@ -1,16 +1,16 @@
-<template lang="html">
+<template lang="html"> 
   <div class="blink">
     <span>press</span>
     <div class="key">
       <slot name="key">
-        (key visual here)
+        (key visual here) 
       </slot>
     </div>
     <span>to {{ actionName }}</span>
   </div>
 </template>
 
-<script>
+<script>                 // Creates the "Blink" effect on the SPACE / ENTER key picture
 export default {
   name: 'blink',
   props: {

@@ -17,13 +17,13 @@ export default {
     left: 0;
     right: 0;
     bottom: 0;
-    background: #333;
+    background: rgb(19, 19, 19);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     font-family: 'Rubik', sans-serif;
-    color: #fff;
+    color: rgb(255, 0, 0);
     -webkit-font-smoothing: antialiased;
     z-index: 3;
   }

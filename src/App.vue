@@ -30,7 +30,7 @@ const DIR_VECTORS = [
   [ 0, -1]
 ]
 
-const SNAKE_SPEED = 10 // cells per second
+const SNAKE_SPEED = 8 // Snake speed (cells per second(Can change this value)).
 
 export default {
   name: 'app',
@@ -75,7 +75,7 @@ export default {
     this.overlay.currentView = 'start-screen'
   },
   methods: {
-    handleKeydown (e) {
+    handleKeydown (e) { // Keybinding ?
       if (this.gameRunning) {
         switch (e.keyCode) {
           case 38: // up arrow
@@ -162,7 +162,7 @@ export default {
       return coord[0] === this.treat[0] &&
              coord[1] === this.treat[1]
     },
-    placeTreat () {
+    placeTreat () { // Places treats randomly
       const rows = this.gridDimensions[0],
             cols = this.gridDimensions[1]
       const newTreat = [-1, -1]
@@ -175,7 +175,7 @@ export default {
       }
       this.treat = newTreat
     },
-    submitScore () {
+    submitScore () { // Submits the score and the name of the player
       if (this.userName === '') return
       scoreboard.push({
         name: this.userName,
@@ -183,16 +183,16 @@ export default {
       })
       this.overlay.currentView = 'leaderboard-screen'
     },
-    restartGame () {
+    restartGame () { // Restarts The game by using the resetGame() and the startGame() funtions. 
       this.resetGame()
       this.startGame()
     },
-    resetGame () {
+    resetGame () { // Resets snake position and direction before starting the game.
       this.snake = [[1, 0], [1, 1]]
       this.direction = 1
       this.directionQueue = []
     },
-    startGame () {
+    startGame () { // Place treats and starts the game.
       this.placeTreat()
       this.gameRunning = true
       this._cycle = setInterval(this.moveSnake, 1000 / SNAKE_SPEED)
@@ -220,6 +220,6 @@ export default {
     transform: translate(-50%, -50%);
   }
   body {
-    background: #ccc;
+    background: rgb(0, 0, 0);
   }
 </style>

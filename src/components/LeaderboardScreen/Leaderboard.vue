@@ -1,6 +1,6 @@
 <template lang="html">
   <div class="container">
-    <h1>Leaders:</h1>
+    <h1>Best Scores:</h1>
     <div class="board">
       <div class="leader" v-for="leader in sortedLeaders">
         <div class="name">{{ leader.name }}</div>

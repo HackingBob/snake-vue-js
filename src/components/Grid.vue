@@ -29,7 +29,7 @@ export default {
   .grid {
     display: flex;
     flex-direction: column;
-    border: 2px solid #333;
+    border: 2px solid rgb(255, 0, 0);
     z-index: 0;
   }
   .row {
@@ -49,7 +49,7 @@ export default {
     align-items: center;
     font-family: 'Rubik', sans-serif;
     font-size: 5em;
-    color: #000;
+    color: rgb(255, 0, 0);
     opacity: 0.2;
     z-index: 1;
     -webkit-font-smoothing: antialiased;

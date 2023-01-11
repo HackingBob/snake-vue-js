@@ -9,11 +9,11 @@ export default {
   computed: {
     classObj: function () {
       return {
-        snake: this.value === 1,
-        treat: this.value === 2
+        snake: this.value === 1, // Snake lentgh value (Can't change)
+        treat: this.value === 2 // Treat quantity value ? (Can't change)
       }
     }
-  }
+  }// ↓ Snake and treats color 
 }
 </script>
 
@@ -21,14 +21,14 @@ export default {
   .cell {
     width: 1em;
     height: 1em;
-    float: left;
+    float: left; 
   }
   .snake {
-    background: #333;
+    background: rgb(180, 0, 0);
     z-index: 2;
   }
-  .treat {
-    background: #c00;
+  .treat { 
+    background: rgb(150, 0, 0);
     z-index: 2;
   }
-</style>
+</style> 

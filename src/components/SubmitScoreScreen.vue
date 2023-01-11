@@ -76,7 +76,7 @@ export default {
     background: transparent;
     width: 100%;
     border: 0;
-    color: #eee;
+    color: rgb(255, 0, 0);
     font-size: 3em;
     text-align: center;
     outline: none;

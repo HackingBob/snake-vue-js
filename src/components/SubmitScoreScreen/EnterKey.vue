@@ -1,12 +1,12 @@
-<template lang="html">
+<template lang="html"> 
   <div class="enter">
     <kbd>Enter</kbd>
   </div>
-</template>
+</template> 
 
 <script>
 export default {
-  name: 'enter-key'
+  name: 'enter-key' // Creates the ENTER key picture ?
 }
 </script>
 
